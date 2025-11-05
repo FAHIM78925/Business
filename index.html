@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salad Business Phase Plan</title>
-    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Custom font for a clean, modern look */
@@ -23,7 +22,6 @@
 </head>
 <body class="min-h-screen">
 
-    <!-- Header Section -->
     <header class="header-bg text-white py-8 shadow-xl">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">
@@ -35,12 +33,15 @@
         </div>
     </header>
 
-    <!-- Navigation Buttons -->
     <div class="bg-gray-100 p-4 sticky top-0 z-10 border-b border-gray-300">
         <div class="max-w-4xl mx-auto flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-4 justify-center">
             <button id="btnHomeKitchen" onclick="showPlan('homeKitchenPlan')"
                 class="flex-1 px-6 py-3 bg-green-600 text-white font-bold rounded-xl shadow-md hover:bg-green-700 transition duration-300 transform hover:scale-[1.02] active:scale-95 text-sm md:text-base">
                 Phase 1: Home Kitchen Model
+            </button>
+            <button id="btnOnlineGuide" onclick="showPlan('onlineGuide')"
+                class="flex-1 px-6 py-3 bg-white text-green-700 font-bold border-2 border-green-600 rounded-xl shadow-md hover:bg-green-50 transition duration-300 transform hover:scale-[1.02] active:scale-95 text-sm md:text-base">
+                Online Business Guide & Menu
             </button>
             <button id="btnStoreRental" onclick="showPlan('storeRentalPlan')"
                 class="flex-1 px-6 py-3 bg-white text-green-700 font-bold border-2 border-green-600 rounded-xl shadow-md hover:bg-green-50 transition duration-300 transform hover:scale-[1.02] active:scale-95 text-sm md:text-base">
@@ -51,13 +52,11 @@
 
     <main class="max-w-4xl mx-auto p-4 md:p-8 space-y-12">
 
-        <!-- Phase 1: Home Kitchen Model (Default View) -->
         <div id="homeKitchenPlan">
             <h2 class="text-3xl font-extrabold text-gray-900 mb-6 border-b-4 border-green-500 pb-2">
                 Phase 1 Plan: Home Kitchen to Delivery
             </h2>
             
-            <!-- 1. Business Overview -->
             <section class="card bg-white p-6 rounded-xl mb-8">
                 <h3 class="text-2xl font-bold text-green-700 border-b-2 border-green-200 pb-2 mb-4">
                     1. Business Overview and Model
@@ -82,7 +81,6 @@
                 </ul>
             </section>
     
-            <!-- 2. Product and Market Details (Updated with Sourcing) -->
             <section class="card bg-white p-6 rounded-xl mb-8">
                 <h3 class="text-2xl font-bold text-green-700 border-b-2 border-green-200 pb-2 mb-6">
                     2. Product, Sourcing, and Pricing
@@ -122,7 +120,6 @@
                 </ul>
             </section>
     
-            <!-- 3. How to Cooperate with Others -->
             <section class="card bg-white p-6 rounded-xl mb-8">
                 <h3 class="text-2xl font-bold text-green-700 border-b-2 border-green-200 pb-2 mb-6">
                     3. How to Cooperate with Others
@@ -150,7 +147,6 @@
                 </ul>
             </section>
     
-            <!-- 4. How to Gain Experience -->
             <section class="card bg-white p-6 rounded-xl mb-8">
                 <h3 class="text-2xl font-bold text-green-700 border-b-2 border-green-200 pb-2 mb-6">
                     4. How to Gain Experience
@@ -174,7 +170,6 @@
                 </ul>
             </section>
 
-            <!-- 5. Strategic Advantages and Challenges -->
             <section class="card bg-white p-6 rounded-xl mb-8">
                 <h3 class="text-2xl font-bold text-green-700 border-b-2 border-green-200 pb-2 mb-6">
                     5. Strategic Advantages and Challenges
@@ -204,7 +199,6 @@
                 </div>
             </section>
             
-            <!-- NEW SECTION: KEY RISKS AND FAILURE POINTS (Section 6) -->
             <section class="card bg-white p-6 rounded-xl mb-8 border-4 border-red-200">
                 <h3 class="text-2xl font-bold text-red-700 border-b-2 border-red-200 pb-2 mb-6">
                     6. Key Risks and Failure Points (Critical)
@@ -236,7 +230,6 @@
             </section>
 
 
-            <!-- 7. Funding and Expansion Plan (Phase 1 Focused) -->
             <section class="card bg-white p-6 rounded-xl">
                 <h3 class="text-2xl font-bold text-green-700 border-b-2 border-green-200 pb-2 mb-6">
                     7. Funding and Phase 1 Roadmap
@@ -256,14 +249,126 @@
             </section>
         </div>
 
+        <div id="onlineGuide" class="hidden">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-6 border-b-4 border-green-500 pb-2">
+                Online Business Guide, Menu & Tips
+            </h2>
 
-        <!-- Phase 2: Store Rental Plan (Hidden by Default) -->
+            <section class="card bg-white p-6 rounded-xl mb-8">
+                <h3 class="text-2xl font-bold text-green-700 border-b-2 border-green-200 pb-2 mb-4">
+                    Key Strengths and Challenges (Home Kitchen)
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-green-800 border-l-4 border-green-500 pl-3 mb-2">Advantages (+)</h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                            [cite_start]<li>**Low investment startup**[cite: 3].</li>
+                            [cite_start]<li>**High demand for healthy food**[cite: 4].</li>
+                            [cite_start]<li>**Home based business possible**[cite: 5].</li>
+                            [cite_start]<li>**Flexible time** + student friendly[cite: 6].</li>
+                            [cite_start]<li>High profit margin (**35%-50%**)[cite: 7].</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-red-800 border-l-4 border-red-500 pl-3 mb-2">Disadvantages / Challenges (-)</h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                            [cite_start]<li>**Perishable ingredients**: must buy fresh daily[cite: 9, 10].</li>
+                            [cite_start]<li>Must maintain strict **hygiene**[cite: 11].</li>
+                            [cite_start]<li>**Delivery challenges**[cite: 12].</li>
+                            [cite_start]<li>**Competition**: need unique brand feel[cite: 13, 14].</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card bg-white p-6 rounded-xl mb-8">
+                <h3 class="text-2xl font-bold text-green-700 border-b-2 border-green-200 pb-2 mb-4">
+                    Suggested Menu & Pricing (BDT Estimate)
+                </h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+                        <thead class="bg-green-100 text-green-800">
+                            <tr>
+                                <th class="py-3 px-4 text-left">Item</th>
+                                <th class="py-3 px-4 text-left">Price (BDT)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">Classic Veg Salad</td>
+                                [cite_start]<td class="py-3 px-4">120-150 [cite: 23]</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">Fruit Bowl Salad</td>
+                                [cite_start]<td class="py-3 px-4">120-180 [cite: 23]</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">Chicken Protein Salad</td>
+                                [cite_start]<td class="py-3 px-4">200-260 [cite: 23]</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">Tuna Salad</td>
+                                [cite_start]<td class="py-3 px-4">220-280 [cite: 23]</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">Yogurt Honey Fruit Cup</td>
+                                [cite_start]<td class="py-3 px-4">100-150 [cite: 23]</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">Combo Bowl</td>
+                                [cite_start]<td class="py-3 px-4">220-350 [cite: 23]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card bg-white p-6 rounded-xl mb-8">
+                <h3 class="text-2xl font-bold text-green-700 border-b-2 border-green-200 pb-2 mb-4">
+                    Operational & Customer Loyalty Tips
+                </h3>
+                
+                [cite_start]<h4 class="text-xl font-semibold text-gray-800 mb-3">Starting Strategy [cite: 15]</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4 mb-6">
+                    [cite_start]<li>Research demand & pick niche (**students, gym, offices**)[cite: 16].</li>
+                    [cite_start]<li>Fix menu & pricing[cite: 17].</li>
+                    [cite_start]<li>Create brand name + logo + social pages[cite: 18].</li>
+                    [cite_start]<li>Shoot **clean food photos**[cite: 19].</li>
+                    [cite_start]<li>Start with **pre-order model**[cite: 20].</li>
+                    [cite_start]<li>Deliver via **Pathao** or self-delivery[cite: 21].</li>
+                    [cite_start]<li>**Brand Message:** Eat Fresh Stay Fit Live Smart[cite: 39].</li>
+                </ul>
+
+                [cite_start]<h4 class="text-xl font-semibold text-gray-800 mb-3">Customer Regularity [cite: 28]</h4>
+                <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                    [cite_start]<li>Give **student discount** or **loyalty card**[cite: 29].</li>
+                    [cite_start]<li>Offer **Weekly salad subscription plans**[cite: 30].</li>
+                    [cite_start]<li>Reward regular customers with **free dressing**[cite: 31].</li>
+                    [cite_start]<li>WhatsApp broadcast menu every week[cite: 31].</li>
+                    [cite_start]<li>Maintain a **friendly tone** + ensure **fast delivery**[cite: 32].</li>
+                </ul>
+            </section>
+
+            <section class="card bg-white p-6 rounded-xl mb-8 border-4 border-blue-200">
+                <h3 class="text-2xl font-bold text-blue-700 border-b-2 border-blue-200 pb-2 mb-4">
+                    [cite_start]Safe Food Preparation & Delivery (Crucial) [cite: 33]
+                </h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                    [cite_start]<li>**Wash vegetables** in salt/vinegar water[cite: 34].</li>
+                    [cite_start]<li>Use **gloves, mask & clean apron** during prep[cite: 35].</li>
+                    [cite_start]<li>Use **airtight food-grade containers** for packaging[cite: 36].</li>
+                    [cite_start]<li>**Separate dressing** and use an **ice gel pack** in hot weather[cite: 37].</li>
+                    [cite_start]<li>Deliver within **30-60 mins** for best freshness[cite: 38].</li>
+                </ul>
+            </section>
+        </div>
+
+
         <div id="storeRentalPlan" class="hidden">
             <h2 class="text-3xl font-extrabold text-gray-900 mb-6 border-b-4 border-green-500 pb-2">
                 Phase 2 Plan: Renting a Store and Formal Launch
             </h2>
 
-            <!-- 8. Location and Budgeting -->
             <section class="card bg-white p-6 rounded-xl mb-8">
                 <h3 class="text-2xl font-bold text-green-700 border-b-2 border-green-200 pb-2 mb-4">
                     8. Location Strategy and Budgeting
@@ -289,7 +394,6 @@
                 </div>
             </section>
 
-            <!-- 9. Legal and Compliance -->
             <section class="card bg-white p-6 rounded-xl mb-8">
                 <h3 class="text-2xl font-bold text-green-700 border-b-2 border-green-200 pb-2 mb-4">
                     9. Legal Steps and Licensing (Mandatory)
@@ -305,7 +409,6 @@
                 </ol>
             </section>
 
-            <!-- 10. Store Layout and Equipment -->
             <section class="card bg-white p-6 rounded-xl mb-8">
                 <h3 class="text-2xl font-bold text-green-700 border-b-2 border-green-200 pb-2 mb-4">
                     10. Store Layout and Equipment
@@ -330,7 +433,6 @@
                 </div>
             </section>
 
-            <!-- 11. Funding for Phase 2 -->
             <section class="card bg-white p-6 rounded-xl">
                 <h3 class="text-2xl font-bold text-green-700 border-b-2 border-green-200 pb-2 mb-4">
                     11. Funding and Timeline for Phase 2
@@ -353,7 +455,6 @@
         </div>
 
 
-        <!-- Footer / Closing Statement -->
         <footer class="text-center py-6 text-gray-500 border-t border-green-200 mt-8">
             <p>&copy; 2025 Salad Business Plan. All rights reserved. Designed for strategic planning.</p>
         </footer>
@@ -365,29 +466,45 @@
         function showPlan(planId) {
             const homeKitchen = document.getElementById('homeKitchenPlan');
             const storeRental = document.getElementById('storeRentalPlan');
+            const onlineGuide = document.getElementById('onlineGuide'); // New element
+
             const btnHomeKitchen = document.getElementById('btnHomeKitchen');
             const btnStoreRental = document.getElementById('btnStoreRental');
+            const btnOnlineGuide = document.getElementById('btnOnlineGuide'); // New button
 
             // Hide all sections
             homeKitchen.classList.add('hidden');
             storeRental.classList.add('hidden');
+            onlineGuide.classList.add('hidden'); // Hide new section
 
-            // Reset button styles to inactive
-            btnHomeKitchen.classList.remove('bg-green-600', 'text-white');
-            btnHomeKitchen.classList.add('bg-white', 'text-green-700', 'border-2', 'border-green-600');
-            
-            btnStoreRental.classList.remove('bg-green-600', 'text-white');
-            btnStoreRental.classList.add('bg-white', 'text-green-700', 'border-2', 'border-green-600');
+            // Function to reset button styles to inactive
+            function resetButtons() {
+                const buttons = [btnHomeKitchen, btnStoreRental, btnOnlineGuide];
+                buttons.forEach(btn => {
+                    btn.classList.remove('bg-green-600', 'text-white');
+                    btn.classList.add('bg-white', 'text-green-700', 'border-2', 'border-green-600');
+                });
+            }
+
+            // Function to set button to active style
+            function setActiveButton(btn) {
+                btn.classList.remove('bg-white', 'text-green-700', 'border-2', 'border-green-600');
+                btn.classList.add('bg-green-600', 'text-white');
+            }
+
+            // Reset all buttons first
+            resetButtons();
 
             // Show the requested section and update button styles to active
             if (planId === 'homeKitchenPlan') {
                 homeKitchen.classList.remove('hidden');
-                btnHomeKitchen.classList.remove('bg-white', 'text-green-700', 'border-2', 'border-green-600');
-                btnHomeKitchen.classList.add('bg-green-600', 'text-white');
+                setActiveButton(btnHomeKitchen);
+            } else if (planId === 'onlineGuide') { // Logic for the new section
+                onlineGuide.classList.remove('hidden');
+                setActiveButton(btnOnlineGuide);
             } else if (planId === 'storeRentalPlan') {
                 storeRental.classList.remove('hidden');
-                btnStoreRental.classList.remove('bg-white', 'text-green-700', 'border-2', 'border-green-600');
-                btnStoreRental.classList.add('bg-green-600', 'text-white');
+                setActiveButton(btnStoreRental);
             }
         }
 
